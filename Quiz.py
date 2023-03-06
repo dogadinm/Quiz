@@ -1,14 +1,12 @@
 import random
 import time
 
-# name = input("Game timer is 30 seconds.\nWhen you enter your name/nickname, the game will start: ").title()
+name = input("Game timer is 30 seconds.\nWhen you enter your name/nickname, the game will start: ").title()
 time_limit = 30
 start_time = time.time()
 
 
 def main():
-    global name
-    name = input("Game timer is 30 seconds.\nWhen you enter your name/nickname, the game will start: ").title()
     start_quiz()
     while True:
         user_input = input("Enter 'restart' to restart the game, 'exit' to end:")
@@ -143,5 +141,3 @@ def restart_game():
 
 if __name__ == "__main__":
     main()
-
-
